@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кофейня «Тёплый угол у кота» — кофе, выпечка и кот Бублик</title>
+  <meta name="description" content="Уютная кофейня с котом-баристой: свежая выпечка, зерновой кофе, тихие столики и Бублик на подоконнике." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">
+        <span class="logo-mark" aria-hidden="true">🐾</span>
+        <span class="logo-text">Тёплый угол <em>у кота</em></span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+              aria-expanded="false" aria-controls="site-nav"
+              aria-label="Открыть меню">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#gallery">Атмосфера</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">кофейня с котом-баристой</p>
+          <h1>Тёплый угол, где кофе варят не спеша, а кот греет место у окна</h1>
+          <p class="lead">
+            Зерно обжариваем каждую неделю, круассаны печём утром,
+            а столик у окна почти всегда занят нашим котом Бубликом.
+            Он подвинется — проверено.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacts">Забронировать столик</a>
+            <a class="btn btn-ghost" href="#menu">Посмотреть меню</a>
+          </div>
+          <p class="hero-note">Учебное демо — заявки не отправляются.</p>
+        </div>
+
+        <div class="hero-visual">
+            <img class="photo photo-hero"
+                src="Кот у окна.jpg"
+                alt="Чашка кофе на столике у окна, рядом сидит кот" />
+            <img class="photo photo-hero-small"
+                src="Бублик на подоконнике.png"
+                alt="Бублик на подоконнике" />
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">О кофейне</h2>
+        <div class="about-grid">
+          <p class="about-text">
+            «Тёплый угол у кота» — небольшая кофейня на 24 места.
+            Мы работаем с локальными обжарщиками, готовим фильтр и эспрессо,
+            печём хлеб и десерты прямо здесь — и всё это под присмотром
+            кота Бублика, который считает себя главным баристой.
+          </p>
+          <ul class="about-facts">
+            <li><strong>7:30</strong> — открываемся к завтраку</li>
+            <li><strong>24</strong> — места, есть розетки</li>
+            <li><strong>3</strong> — сорта зерна в ротации</li>
+            <li><strong>1</strong> — кот, всегда на месте</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- МЕНЮ / УСЛУГИ -->
+    <section id="menu" class="section menu">
+      <div class="container">
+        <h2 class="section-title">Что у нас есть</h2>
+        <p class="section-sub">Нажмите «Подробнее», чтобы открыть описание и цену.</p>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <h3>Кофе на зерне</h3>
+            <p class="menu-short">Эспрессо, фильтр, капучино, флэт-уайт.</p>
+            <p class="menu-price">от 180 ₽</p>
+            <button class="btn btn-outline" type="button"
+                    data-service="coffee" data-title="Кофе на зерне">
+              Подробнее
+            </button>
+          </article>
+
+          <article class="menu-card">
+            <h3>Выпечка «Мур»</h3>
+            <p class="menu-short">Круассаны, синнабоны, тарты и хлеб.</p>
+            <p class="menu-price">от 120 ₽</p>
+            <button class="btn btn-outline" type="button"
+                    data-service="bakery" data-title="Выпечка «Мур»">
+              Подробнее
+            </button>
+          </article>
+
+          <article class="menu-card">
+            <h3>Завтраки «С лапками»</h3>
+            <p class="menu-short">Сырники, омлеты, каши и тосты.</p>
+            <p class="menu-price">от 290 ₽</p>
+            <button class="btn btn-outline" type="button"
+                    data-service="breakfast" data-title="Завтраки «С лапками»">
+              Подробнее
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2 class="section-title">Атмосфера</h2>
+        <p class="section-sub">Три кадра из зала и с кухни.</p>
+
+        <div class="gallery-grid">
+            <figure class="gallery-item">
+                <img class="photo photo-1"
+                    src="Бублик на подоконнике.png"
+                    alt="Бублик на подоконнике кофейни" />
+                <figcaption>Бублик на подоконнике</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img class="photo photo-2"
+                    src="Стойка и хвост.png"
+                    alt="Бариста за стойкой, рядом сидит кот" />
+                <figcaption>Стойка и хвост</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img class="photo photo-3"
+                    src="Витрина.png"
+                    alt="Витрина с выпечкой, кот наблюдает за посетителями" />
+                <figcaption>Витрина и наблюдатель</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contacts" class="section contacts">
+      <div class="container contacts-grid">
+        <div class="contacts-info">
+          <h2 class="section-title">Контакты</h2>
+          <p>Мы в двух минутах от метро, во дворе с клёнами. Ищите вывеску с котом.</p>
+          <ul class="contact-list">
+            <li><span class="contact-label">Адрес</span> ул. Примерная, 12</li>
+            <li><span class="contact-label">Телефон</span> <a href="tel:+70000000000">+7 000 000-00-00</a></li>
+            <li><span class="contact-label">Email</span> <a href="mailto:hello@teply-ugol.example">hello@teply-ugol.example</a></li>
+            <li><span class="contact-label">Часы</span> 7:30 – 22:00 ежедневно</li>
+            <li><span class="contact-label">Кот</span> Бублик, на месте с 10:00</li>
+          </ul>
+        </div>
+
+        <form id="booking-form" class="booking-form" novalidate>
+          <h3>Оставить заявку коту-баристе</h3>
+          <p class="form-note">Это учебная форма — Бублик не получит ваше сообщение.</p>
+
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <p class="error" data-error-for="name" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <p class="error" data-error-for="email" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="service">Что интересует</label>
+            <select id="service" name="service" required>
+              <option value="">Выберите вариант</option>
+              <option value="coffee">Кофе на зерне</option>
+              <option value="bakery">Выпечка «Мур»</option>
+              <option value="breakfast">Завтраки «С лапками»</option>
+              <option value="table">Бронь столика</option>
+            </select>
+            <p class="error" data-error-for="service" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <p class="error" data-error-for="message" aria-live="polite"></p>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Проверить заявку</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Кофейня «Тёплый угол у кота». Учебный проект.</p>
+      <ul class="footer-contacts">
+        <li><a href="tel:+70000000000">+7 000 000-00-00</a></li>
+        <li><a href="mailto:hello@teply-ugol.example">hello@teply-ugol.example</a></li>
+        <li><a href="#hero">Наверх</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ДИАЛОГ УСЛУГИ -->
+  <dialog id="service-dialog" class="service-dialog" aria-labelledby="dialog-title">
+    <form method="dialog" class="dialog-form">
+      <h3 id="dialog-title">Услуга</h3>
+      <p id="dialog-text"></p>
+      <p id="dialog-price" class="dialog-price"></p>
+      <button class="btn btn-primary" type="submit">Закрыть</button>
+    </form>
+  </dialog>
+</body>
+</html>
